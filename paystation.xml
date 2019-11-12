@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="hikashoppayment">
+	<name>Hikashop Paystation Three-party payment Plugin</name>
+	<creationDate>04 November 2014</creationDate>
+	<version>2.3.4</version>
+	<author>Paystation Ltd</author>
+	<authorEmail>info@paystation.co.nz</authorEmail>
+	<authorUrl>https://www2.paystation.co.nz/</authorUrl>
+	<license>The MIT License (MIT)</license>
+	<description>This plugin enables three-party payments with Paystation Payment Gateway</description>
+	<files>
+		<filename plugin="paystation">paystation.php</filename>
+		<filename>paystation_end.php</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop" description="HikaShop options" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
